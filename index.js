@@ -1,13 +1,17 @@
 require('dotenv').config()
 require('express-async-errors')
-const express = require('express')
-const app = express()
 
 // extra secuirity packages
 const helmet = require('helmet')
 const cors = require('cors')
 const xss = require('xss-clean')
 const rateLimiter = require('express-rate-limit')
+
+// Swagger
+const swaggerUI = require('swagger-ui-express')
+const YAML = require('yamljs')
+const express = require('express')
+const app = express()
 //conectDB
 const connectDB = require('./db/connect')
 const authenticationMiddleWare = require('./middleware/auth')
