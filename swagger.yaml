@@ -8,7 +8,7 @@ servers:
   - url: https://job-api-with-mongoose-express-3.onrender.com
     variables: {}
 paths:
-  /auth/register:
+  /api/v1/auth/register:
     post:
       tags:
         - Auth
@@ -32,7 +32,7 @@ paths:
           headers: {}
       deprecated: false
       security: []
-  /auth/login:
+  /api/v1/auth/login:
     post:
       tags:
         - Auth
@@ -55,7 +55,7 @@ paths:
           headers: {}
       deprecated: false
       security: []
-  /jobs:
+  /api/v1/jobs:
     post:
       tags:
         - Jobs
@@ -88,7 +88,7 @@ paths:
           description: ''
           headers: {}
       deprecated: false
-  /jobs/{id}:
+  /api/v1/jobs/{id}:
     parameters:
       - in: path
         name: id
