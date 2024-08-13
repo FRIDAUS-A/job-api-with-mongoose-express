@@ -60,7 +60,7 @@ app.use(errorHandlerMiddleWare)
 const port = process.env.PORT
 
 const start = async () => {
-	await connectDB(process.env.MONGO_URL)
+	await connectDB('mongodb+srv://ayobamifridaus:okoya@my-application.8n1wl.mongodb.net/JOBS-API?retryWrites=true&w=majority&appName=MY-APPLICATION')
 	app.listen(port, () => {
 		console.log(`Server is listening on port ${port}`)
 	})
