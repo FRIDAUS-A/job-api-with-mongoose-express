@@ -5,7 +5,7 @@ info:
   contact: {}
   version: '1.0'
 servers:
-  - url: https://jobs-api-06.herokuapp.com/api/v1
+  - url: https://job-api-with-mongoose-express.onrender.com
     variables: {}
 paths:
   /auth/register:
