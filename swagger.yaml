@@ -5,7 +5,7 @@ info:
   contact: {}
   version: '1.0'
 servers:
-  - url: https://job-api-with-mongoose-express.onrender.com
+  - url: https://job-api-with-mongoose-express-3.onrender.com
     variables: {}
 paths:
   /auth/register:
